@@ -245,7 +245,29 @@ i) Now move yourself to the same level, i.e. sibling to data directory. Create a
 ```
 
 ```bash
-$ du -sh ../
+
+$ nano download_pokemons.sh
+
+
+#!/bin/bash
+
+cd pokemons
+
+while read -r line
+do
+     echo -e "Downloading data for pokemon $line"
+     curl https://pokeapi.co/api/v2/pokemon-species/$line > "${line}.json"
+     sleep 2
+     echo -e "Download complete for pokemon $line"
+     sleep 1
+done < pokemon_list.txt
+
+CTRL + X, Y, ENTER
+
+$ chmod +x download_pokemons.sh
+
+$ ./download_pokemons.sh
+
 ```
 
 ---
@@ -256,15 +278,15 @@ Fill in this table. You can do this in any application, it might be too hardcore
 
 | Command | What does the command do | Some useful options |
 | ------- | ------------------------ | ------------------- |
-| cd      |                          |                     |
-| ls      |                          |                     |
-| touch   |                          |                     |
-| wc      |                          |                     |
-| grep    |                          |                     |
-| mkdir   |                          |                     |
-| mv      |                          |                     |
-| rm      |                          |                     |
-| rmdir   |                          |                     |
+| cd      |    Changes Directory     |                     |
+| ls      |    Lists files in CD     |                     |
+| touch   | Creates a file or folder |                     |
+| wc      |       Word Count         |                     |
+| grep    |         Search           |                     |
+| mkdir   |     Make Directory       |                     |
+| mv      |       Move File          |                     |
+| rm      |       Remove File        |                     |
+| rmdir   |    Remove Directory      |                     |
 | ssh     |                          |                     |
 | curl    |                          |                     |
 | sudo    |                          |                     |
