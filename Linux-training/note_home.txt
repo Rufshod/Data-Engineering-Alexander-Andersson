@@ -1,0 +1,4 @@
+hello from note_home
+
+current path is: /c/Users/Agam/Documents/Programming/Repos/data-engineering-alexander-andersson/linux-training
+
