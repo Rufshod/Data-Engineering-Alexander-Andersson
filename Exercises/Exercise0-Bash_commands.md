@@ -276,37 +276,38 @@ $ ./download_pokemons.sh
 
 Fill in this table. You can do this in any application, it might be too hardcore to do this with terminal only. Tips you can use man command to check documentation. Also try out the different commands to see them in action.
 
-| Command | What does the command do | Some useful options |
-| ------- | ------------------------ | ------------------- |
-| cd      |    Changes Directory     |                     |
-| ls      |    Lists files in CD     |                     |
-| touch   | Creates a file or folder |                     |
-| wc      |       Word Count         |                     |
-| grep    |         Search           |                     |
-| mkdir   |     Make Directory       |                     |
-| mv      |       Move File          |                     |
-| rm      |       Remove File        |                     |
-| rmdir   |    Remove Directory      |                     |
-| ssh     |                          |                     |
-| curl    |                          |                     |
-| sudo    |                          |                     |
-| apt-get |                          |                     |
-| ps      |                          |                     |
-| cp      |                          |                     |
-| less    |                          |                     |
-| top     |                          |                     |
-| head    |                          |                     |
-| echo    |                          |                     |
-| cat     |                          |                     |
-| chmod   |                          |                     |
-| chown   |                          |                     |
-| kill    |                          |                     |
-| &&      |                          |                     |
-| wget    |                          |                     |
-| pwd     |                          |                     |
-| >>      |                          |                     |
-| >       |                          |                     |
-| \*      |                          |                     |
-| ./      |                          |                     |
-| diff    |                          |                     |
-| find    |                          |                     |
+Absolutely, here's your updated table:
+
+| Command | What does the command do | Some useful options | Options Explained |
+| ------- | ------------------------ | ------------------- | ----------------- |
+| cd      | Change directory | `-P`, `-L` | `-P`: Follows the physical directory structure without following symbolic links. `-L`: Follows symbolic links. |
+| ls      | List directory contents | `-l`, `-a`, `-h` | `-l`: Provides a long listing format. `-a`: Shows all files, including hidden ones. `-h`: Displays file size in human-readable format. |
+| touch   | Creates or updates a file | | |
+| wc      | Print newline, word, and byte counts for a file | `-l`, `-w`, `-c` | `-l`: Counts the number of lines. `-w`: Counts the number of words. `-c`: Counts the number of bytes. |
+| grep    | Search text using patterns | `-i`, `-r`, `-v` | `-i`: Makes the search case-insensitive. `-r`: Makes grep search recursively. `-v`: Inverts the search, showing lines that do not match. |
+| mkdir   | Make directories | `-p`, `-v` | `-p`: Creates necessary parent directories. `-v`: Makes mkdir verbose, i.e., tells the user every directory it creates. |
+| mv      | Move (rename) files | `-i`, `-n`, `-v` | `-i`: Prompts before overwriting files. `-n`: Does not overwrite an existing file. `-v`: Prints the name of each file before moving. |
+| rm      | Remove files or directories | `-i`, `-r`, `-f` | `-i`: Prompts before every removal. `-r`: Removes directories and their contents recursively. `-f`: Forces removal without prompting. |
+| rmdir   | Remove empty directories | | |
+| ssh     | Remote system login/execute commands | `-p`, `-i` | `-p`: Specifies the port to connect to on the remote host. `-i`: Selects a file from which the identity for RSA or DSA authentication is read. |
+| curl    | Transfer data from or to a server | `-I`, `-X`, `-d` | `-I`: Fetches only the HTTP-header. `-X`: Specifies a custom request method. `-d`: Sends the specified data in a POST request to the HTTP server. |
+| sudo    | Execute command as another user (superuser by default) | | |
+| apt-get | APT package handling utility (Debian based systems) | `update`, `install`, `remove` | `update`: Updates the list of available packages. `install`: Installs a new package. `remove`: Removes a package. |
+| ps      | Report a snapshot of the current processes | `-e`, `-f`, `-l` | `-e`: Selects all processes. `-f`: Provides a full-format listing. `-l`: Provides a long-format listing. |
+| cp      | Copy files and directories | `-i`, `-n`, `-v` | `-i`: Prompts before overwrite. `-n`: Does not overwrite an existing file. `-v`: Prints the name of each file before copying. |
+| less    | Page through text one screenful at a time | | |
+| top     | Display Linux processes | | |
+| head    | Output the first part of files | `-n` | `-n`: Outputs the first 'n' lines. |
+| echo    | Display a line of text | `-n`, `-e` | `-n`: Does not output the trailing newline. `-e`: Enables interpretation of backslash escapes. |
+| cat     | Concatenate files and print on the standard output | `-n`, `-b` | `-n`: Numbers all output lines. `-b`: Numbers nonempty output lines. |
+| chmod   | Change file mode bits | `-R`, `-f`, `-v` | `-R`: Changes files and directories recursively. `-f`: Suppresses most error messages. `-v`: Outputs a diagnostic for every file processed. |
+| chown   | Change file owner and group | `-R`, `-f`, `-v` | `-R`: Changes files and directories recursively. `-f`: Suppresses most error messages. `-v`: Outputs a diagnostic for every file processed. |
+| kill    | Send a signal to a process | `-l`, `-s` | `-l`: Lists all signal names. `-s`: Sends a specific signal. |
+| wget    | Network downloader | `-q`, `-O`, `-c` | `-q`: Turns off wget's output. `-O`: Directs the output to the file specified. `-c`: Continues getting a partially downloaded file. |
+| pwd     | Print name of current/working directory | | |
+| >>      | Append output to a file | | |
+| >       | Redirect output to a file | | |
+| *      | Wildcard | | Any number of characters. Example *.json selects all files ending in json |
+| ./      | Execute a file in the current directory | | |
+| diff    | Compare files line by line | | |
+| find    | Search for files in a directory hierarchy | | |
