@@ -1,5 +1,8 @@
 FROM python:3.11
 
+# host container
+# add main.py to the container
 ADD main.py . 
 
+# run main.py with the CMD command
 CMD ["python", "./main.py"]
