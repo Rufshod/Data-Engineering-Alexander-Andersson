@@ -10,6 +10,4 @@ RUN pip install matplotlib plotly_express pandas numpy dash sklearn
 WORKDIR /Exercise1
 
 # Run ex1_0_setup.py when the container starts
-#CMD ["python", "src/ex1_0_setup.py"]
-
-CMD ["tail", "-f", "/dev/null"]
+CMD ["python", "src/ex1_0_setup.py"]

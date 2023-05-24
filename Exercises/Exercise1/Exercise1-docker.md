@@ -112,18 +112,70 @@ print("Python version")
 print(sys.version)
 ```
 
-h) Spin up the container in interactive mode. Here are some stuffs you can explore
+h1) Spin up the container in interactive mode. Here are some stuffs you can explore
 
+- Answer pt.1
+- First open Ubuntu and:
+```bash
+cd /YOURPATH/Exercise1
+#run commands like:
+docker ps
+#To check that you still see active docker image and container
+```
+- Then run the following in Ubuntu:
+```bash
+$ docker exec -it ex1-container /bin/bash
+```
+- Now you are in interactive mode.
+
+
+h2)
 - check your current directory
+- Answer
+```bash
+pwd
+```
 - list all files
+- Answer
+```bash
+ls -al
+```
 - navigate to parents and list files
+- Answer
+```bash
+cd .. && ls -al
+```
 - list all files inside Exercise1
+- Answer
+```bash
+ls -al /Exercise1
+```
 - count all files and folders inside Exercise1
+- Answer
+```bash
+ls -al /Exercise1 | wc -l
+```
 - check your OS
-- check the current date
-- take a snapshot of the current python packages with corresponding versions and pipe them into requirements2.txt
-- check the differences in requirements2.txt and requirements.txt
+- Answer
+```bash
+uname -a
+```
 
+- check the current date
+- Answer
+```bash
+date
+```
+- take a snapshot of the current python packages with corresponding versions and pipe them into requirements2.txt
+- Answer
+```bash
+pip freeze > requirements2.txt
+```
+- check the differences in requirements2.txt and requirements.txt
+- Answer
+```bash
+diff /Exercise1/requirements.txt /Exercise1/requirements2.txt
+```
 ---
 
 ## 1. It's the final countdown (*)
