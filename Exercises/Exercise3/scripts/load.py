@@ -13,7 +13,7 @@ class Load:
             with open(self.avatar_path / f"{id}.png" , "wb") as file:
                 file.write(response.content)
 
-            time.sleep(2)
+            time.sleep(0.05)
     
     def load_csv_dashboard(self, df):
         df.to_csv(self.data_warehouse_path/"users.csv")
