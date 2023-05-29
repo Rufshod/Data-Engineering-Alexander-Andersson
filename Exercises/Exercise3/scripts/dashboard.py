@@ -8,7 +8,10 @@ from dash_bootstrap_components import Row, Col, Card, CardImg, Container, themes
 import base64
 
 image_paths = [path.as_posix() for path in paths_directory["avatars"].iterdir()]
-
+# %%
+import sys
+print(sys.executable)
+# %%
 
 df = pd.read_csv(paths_directory["data_warehouse"] / "users.csv", index_col=1).drop(
     columns="Unnamed: 0"
