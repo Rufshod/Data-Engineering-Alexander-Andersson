@@ -9,7 +9,7 @@ def extract_users(number_users: int, users_directory: str):
             json.dump(data, file)
 
         print(f"Extracting user with id {data['id']}")
-        time.sleep(2)
+        time.sleep(0.05)
 
 if __name__ == "__main__":
     extract_users(10)
