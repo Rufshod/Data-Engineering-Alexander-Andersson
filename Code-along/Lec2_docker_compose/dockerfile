@@ -1,12 +1,11 @@
 FROM python:3.11
 
-# host container
-# add main.py to the container
-ADD main.py . 
-# installing with pip
+WORKDIR /app
+
+COPY . .
+
 RUN pip install plotly_express dash
 
 EXPOSE 8050
 
-# run main.py with the CMD command
-CMD ["python", "./main.py"]
+CMD ["python", "./src/main.py"]

@@ -10,3 +10,4 @@ EXPOSE 8050
 
 # run main.py with the CMD command
 CMD ["python", "./main.py"]
+

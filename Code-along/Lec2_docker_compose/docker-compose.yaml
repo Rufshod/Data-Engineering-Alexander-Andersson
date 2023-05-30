@@ -1,18 +1,7 @@
 services:
   python:
     image: python:3.11
-    build: .
+    build: . # build the image using the Dockerfile in the current directory
     ports:
       - "8050:8050"
     container_name: lecture2
-
-    # named volume
-    # volumes:
-    #   - dice-simulator:/app/src/
-
-    # bind mount
-    volumes:
-      - ./src:/app/src
-
-# volumes:
-#   dice-simulator:
