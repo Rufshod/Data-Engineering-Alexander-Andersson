@@ -256,7 +256,7 @@ cd /YOURPATH/Exercise1
 docker ps
 #To check that you still see active docker image and container
 ```
-- Then run the following in Ubuntu:
+- Then run the following in Ubuntu: (dont forget to update your image / container)
 ```bash
 $ docker exec -it ex1-container /bin/bash
 ```
@@ -274,7 +274,12 @@ crontab -e
 <img src="../assets/crontab-e.jpg" width = 400>
 
 ```bash
-../../Exercise1/src/f_c_script.py
+0 * * * * /Exercise1/src/f_c_script.py
+Press CTRL X.
+Press Y to Save
+Press ENTER at:
+File Name to Write: /tmp/crontab.XXXXaBcDeF
+```
 
 Let it run for couple of minutes, the output should look something like this 
 
