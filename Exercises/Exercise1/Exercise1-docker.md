@@ -228,6 +228,9 @@ log_file = os.path.join(logs_dir, "countdown.log")
 
 # create or open file inside logs directory:
 with open(log_file, "w") as f:
+
+    #Write current date and time:
+    f.write(f"-------------------------------------------------\nCountdown from {datetime.now()}\n-------------------------------------------------\n\n")
     # Write each event and the remaining time until it:
     for event, event_date in events.items():
         time_left = event_date - datetime.now()
@@ -241,7 +244,37 @@ b) Make a cron schedule inside of your docker container in interactive mode to r
 Note that you might need to install
 
 - crontab
-- nano
+- nano  
+  
+
+### Answer:   
+  
+First open Ubuntu and:
+```bash
+cd /YOURPATH/Exercise1
+#run commands like:
+docker ps
+#To check that you still see active docker image and container
+```
+- Then run the following in Ubuntu:
+```bash
+$ docker exec -it ex1-container /bin/bash
+```
+- Now you are in interactive mode.
+### Install Cron and Nano
+```bash
+apt-get update && apt-get install -y cron nano
+# -y option automatically answers 'yes' to the prompts.
+```
+- run the nano editor:
+```bash
+crontab -e
+```
+- It looks like this:
+<img src="../assets/crontab-e.jpg" width = 400>
+
+```bash
+../../Exercise1/src/f_c_script.py
 
 Let it run for couple of minutes, the output should look something like this 
 

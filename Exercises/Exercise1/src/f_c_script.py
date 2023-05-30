@@ -26,6 +26,9 @@ log_file = os.path.join(logs_dir, "countdown.log")
 
 # create or open file inside logs directory:
 with open(log_file, "w") as f:
+
+    #Write current date and time:
+    f.write(f"-------------------------------------------------\nCountdown from {datetime.now()}\n-------------------------------------------------\n\n")
     # Write each event and the remaining time until it:
     for event, event_date in events.items():
         time_left = event_date - datetime.now()
