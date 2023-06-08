@@ -7,7 +7,7 @@ date_lake_path = Path(__file__).parents[1] / "data" / "datalake"
 
 data_warehouse_path = Path(__file__).parents[1] / "data" / "datawarehouse"
 
-time_variable = "date +%y%m%d_%H%M%S"
+time_variable = "$(date +%y%m%d_%H%M%S)"
 
 joke_api = "https://official-joke-api.appspot.com/random_joke"
 
