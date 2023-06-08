@@ -21,7 +21,10 @@ def _save_dice_rolls(task_instance):
         file.write(f"{simulation_data}\n\n")
 
 
-with DAG(dag_id = "dice_simulator", start_date = datetime(2023,6,7)):
+with DAG(dag_id = "dice_simulator", start_date = datetime(2023,6,7), 
+         schedule = "*/30 8 * * *", # every 30 minutes at 8am every day 
+         # 08:30, 09:00 ... 23:30
+         catchup=True): 
     setup_directories = BashOperator(
         task_id = "setup_directories",
         bash_command = f"mkdir -p {simulation_path}"
