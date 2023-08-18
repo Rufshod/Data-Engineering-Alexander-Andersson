@@ -1,4 +1,6 @@
+import pandas as pd
 import pyjokes
+from pandas import DataFrame as df
 
 reactions = [
     "Hilarious!",
@@ -27,7 +29,3 @@ def print_random_joke_and_reaction():
 
 if __name__ == "__main__":
     print_random_joke_and_reaction()
-# Testing
-# $ python print_joke.py
-
-# $ python print_joke.py
