@@ -1,6 +1,5 @@
-import pandas as pd
 import pyjokes
-from pandas import DataFrame as df
+
 
 reactions = [
     "Hilarious!",
