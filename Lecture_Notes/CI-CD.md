@@ -79,7 +79,66 @@ jobs:
     - name: Test with pytest
       run: |
         pytest tests/
-``` 
+```
 
+## Black: Code formatter
+:pray: https://github.com/psf/black :pray:  
+Changes your code to follow the black "style".  
+Only cosmetics code behaves 100% the same.  
+Easier to read code. avoids different styles in large teams.
+
+## isort: Import organizer.
+![Alt text](image-3.png)
+
+![Alt text](image-4.png)
+
+![Alt text](image-5.png)
+Regression Test are good to find hidden bugs. 
+Hidden bugs are really bad.
+
+## Pytest
+Pytest: https://docs.pytest.org/
+  
+  Most popular testing framwork in Python.  
     
+Pytest can be used to create and run tests
+    
+Pytest will automatically find your tests if you start their names with "test".
+  
+        # Put test code under tests/
+        ├── src
+        |   └── newsfeed
+        |       ├── example1.py
+        |       └── example2.py
+        └── tests
+            ├── test_example1.py
+            └── test_example2.py
 
+Simple Python code to check the correct python version might look like this:
+```py
+# tests/test_example1.py
+import platform
+
+# Pytest find this function because it starts with "test"
+def test_correct_python_version()
+    python_version = platform.python_version()
+    assert python_version == "3.10.2"
+
+# Pytest ignores this one
+def helper_function_not_starting_with_test():
+    return :sweat:
+```
+:sweat:
+
+Pre-commit: https://pre-commit.com/
+  
+  Mini CI/CD that runs on your laptop every time you make a git commit
+
+  Saves alot of time since it's much quicker than Github CI/CD
+
+### Honorable Mentions
+Flake8 
+  Can tell you if you have created variables that are never used and many more helpful code checks.
+
+**Ruff**
+New tool that is growing very quickly. Looks like this will be the default tool soon - but the older tools have better compatibility right now ☻
