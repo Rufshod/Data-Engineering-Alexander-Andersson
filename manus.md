@@ -1,4 +1,4 @@
-# Slide 1: AlexNet News, ANN
+## _Slide 1: AlexNet News, ANN_
 - William, Hannes, Philip, Alexander
 
 ### - Hej!
@@ -6,9 +6,9 @@
 - ANN. Jag heter Alexander, och jag är här med mina kollegor William, Hannes, och Philip. 
 - Vi är glada att få chansen att prata om vårt spännande produkt.
 
-# Slide 2: Målet med ANN:
+## _Slide 2: Målet med ANN:_
 
-## Sammanfatta artiklar för olika målgrupper​
+### *Sammanfatta artiklar för olika målgrupper*​
 
 - Så, vad går ANN ut på? 
 
@@ -21,7 +21,7 @@
 - Oavsett om ni är intresserade av teknik, sport eller kultur, har vi något för er."
 
 
-## Spara tid och gör det enklare att ta in information för våra användare​
+### _Spara tid och gör det enklare att ta in information för våra användare_
 
 - Genom att sammanfatta artiklarna gör vi det inte bara snabbare att ta del av nyheter, 
 
@@ -33,7 +33,7 @@
 
 - Eller både och!
 
-## Vi gör information mer tillgänlig.
+### _Vi gör information mer tillgänlig._
 
 - Vi vill göra information mer lätt-tillgänglig,
 - Användaren kanske är jätte interesserad utav tillexempel AI men har svårt att förstå vad en (Technobabble) är
@@ -45,9 +45,9 @@
 
 - Då kan användaren få det.
 
-# Slide 3: Summeringar från dina favorit bloggar​
+## _Slide 3: Summeringar från dina favorit bloggar​_
 
-## Skickas direkt till din Discord eller läs det via vår hemsida​
+### _Skickas direkt till din Discord eller läs det via vår hemsida​_
 
 - Så hur får ni tillgång till dessa sammanfattningar? 
 - Det är enkelt. 
@@ -58,7 +58,7 @@
 - Som vi kommer att visa med ett demo senare i presentationen.
 
 
-## Alltid den senaste artikeln​
+### *Alltid den senaste artikeln*​
 
 - Och oroa dig inte för att missa något! 
 
